@@ -39,5 +39,5 @@ public class UserCreateDto {
     private String password;
 
     @Positive(message = "El ID del rol debe ser un número positivo")
-    private Long role;
+    private Long role = (long) 1;
 }

@@ -1,5 +1,8 @@
 package com.server.app.controllers;
 
+import com.server.app.dto.auth.UpdatePasswordRequest;
+import com.server.app.dto.auth.UpdateProfileRequest;
+import com.server.app.dto.auth.loginResponse;
 import com.server.app.dto.response.PaginationMeta;
 import com.server.app.dto.user.UserCreateDto;
 import com.server.app.dto.user.UserUpdateDto;
@@ -49,6 +52,8 @@ public class UserController {
                         p.getTotalElements()
                 )
         ));
+
+
     }
 
     @GetMapping("/{id}")
