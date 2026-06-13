@@ -178,7 +178,7 @@ public class UserService {
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
 
 
-        Role role = roleRepository.findById((dto.getRole()))
+        Role role = roleRepository.findById((1L))
                 .orElseThrow(() -> new RuntimeException("Rol no encontrado"));
         user.setRole(role);
 
